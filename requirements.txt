@@ -1,0 +1,12 @@
+packaging
+numpy
+scipy
+librosa
+soundfile
+torchaudio
+pyyaml
+tensorboard
+pesq
+joblib
+einops
+sounddevice   # only needed for rt_enhance.py (live mic I/O and GUI playback)

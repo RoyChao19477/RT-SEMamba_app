@@ -1,0 +1,28 @@
+RT-SEMamba real-time app
+
+This repository contains the real-time demo application of RT-SEMamba:
+https://github.com/RoyChao19477/RT-SEMamba
+
+-------------------------------------------------------------------------------
+Third-party code
+
+models/mps_kernels.py contains a Metal selective-scan kernel adapted from
+SpeechLens (https://github.com/faraday/SpeechLens),
+Sources/Inference/MetalSelectiveScan.swift:
+
+    SpeechLens
+    Copyright 2026 Çağatay Çallı
+
+    Licensed under the Apache License, Version 2.0.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Modifications: ported from MLX/Swift to PyTorch (torch.mps.compile_shader);
+the SSM state is read from and written back to a caller-owned buffer so the
+kernel supports stateful chunked streaming.
+
+mamba_install/ and mamba_install_mps/ vendor mamba_ssm
+(https://github.com/state-spaces/mamba), licensed under the Apache License,
+Version 2.0; see mamba_install*/LICENSE. In mamba_install_mps, __init__.py,
+models/mixer_seq_simple.py, utils/generation.py and utils/hf.py were modified
+so that `transformers` is optional (only needed for the language-model classes).
