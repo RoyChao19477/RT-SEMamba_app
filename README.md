@@ -1,15 +1,21 @@
-# RT-SEMamba: Real-Time Speech Enhancement Mamba via Progressive Knowledge Distillation
+# RT-SEMamba App for Apple Silicon Macs (M-series)
 
+**Real-time speech enhancement on your M1 / M2 / M3 / M4 MacBook** — a desktop app that runs
+RT-SEMamba live on your microphone via PyTorch MPS and a fused Metal kernel, and records the
+noisy and enhanced audio.
+
+[![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple%20Silicon%20(M--series)-000000?logo=apple)](#quick-start--real-time-app-on-apple-silicon)
 [![Interspeech 2026](https://img.shields.io/badge/Interspeech%202026-Oral-b31b1b)](https://github.com/RoyChao19477/RT-SEMamba)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Official implementation of **RT-SEMamba**, accepted to **Interspeech 2026 (oral)**.
-
 > [!NOTE]
-> This is the **real-time demo app** of RT-SEMamba: a desktop GUI that enhances your
-> microphone live and records the result, with a fused Metal kernel for Apple Silicon
-> ([Real-time app](#real-time-app)). Original RT-SEMamba repository:
+> This repository is the **M-series Mac app** of RT-SEMamba (Interspeech 2026, oral):
+> a desktop GUI that enhances your microphone live and records the result, with a fused
+> Metal kernel for Apple Silicon ([Real-time app](#real-time-app)). It also includes the
+> training and inference code. Original RT-SEMamba repository:
 > **https://github.com/RoyChao19477/RT-SEMamba**
+
+**RT-SEMamba: Real-Time Speech Enhancement Mamba via Progressive Knowledge Distillation**
 
 Rong Chao<sup>1,2</sup>, Sung-Feng Huang<sup>5</sup>, Moreno La Quatra<sup>3</sup>, Sabato Marco Siniscalchi<sup>4</sup>, Wen-Huang Cheng<sup>2</sup>, Szu-Wei Fu<sup>5</sup>, Yu Tsao<sup>1</sup>
 
