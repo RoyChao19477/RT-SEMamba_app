@@ -429,7 +429,9 @@ The PCS implementation is from [PCS400](https://github.com/RoyChao19477/PCS/tree
 
 The Apple Silicon (MPS) acceleration in `models/mps_kernels.py` is adapted from the Metal
 selective-scan kernel of [SpeechLens](https://github.com/faraday/SpeechLens)
-(Copyright 2026 Çağatay Çallı, Apache License 2.0); see [NOTICE](NOTICE).
+(Copyright 2026 Çağatay Çallı, Apache License 2.0); see [NOTICE](NOTICE). We acknowledge the GitHub repo for its MPS speed-up design.
+
+This demo code was co-authored with [Claude](https://claude.com/claude-code) (Anthropic).
 
 ## Citation
 
